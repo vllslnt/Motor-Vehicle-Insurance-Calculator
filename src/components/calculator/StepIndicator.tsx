@@ -16,7 +16,7 @@ const STEPS = [
 
 export function StepIndicator({ currentStep }: StepIndicatorProps) {
   return (
-    <div className="w-full py-6">
+    <div className="w-full py-4 md:py-6">
       <div className="flex items-start w-full">
         {STEPS.map((step, index) => {
           const isCompleted = currentStep > step.id;
@@ -28,7 +28,8 @@ export function StepIndicator({ currentStep }: StepIndicatorProps) {
               <div className="flex flex-col items-center shrink-0">
                 <div
                   className={cn(
-                    "relative z-10 flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all duration-300",
+                    "relative z-10 flex items-center justify-center rounded-full border-2 transition-all duration-300",
+                    "h-8 w-8 text-sm md:h-10 md:w-10 md:text-base",
                     isCompleted
                       ? "bg-primary border-primary text-primary-foreground"
                       : isCurrent
@@ -37,7 +38,7 @@ export function StepIndicator({ currentStep }: StepIndicatorProps) {
                   )}
                 >
                   {isCompleted ? (
-                    <CheckCircle className="h-5 w-5" />
+                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5" />
                   ) : (
                     step.id
                   )}
@@ -45,7 +46,9 @@ export function StepIndicator({ currentStep }: StepIndicatorProps) {
 
                 <span
                   className={cn(
-                    "mt-3 w-28 text-center text-xs font-medium leading-tight transition-colors duration-300",
+                    "mt-2 md:mt-3 text-center font-medium leading-tight transition-colors duration-300",
+                    "w-14 text-[10px] sm:w-20 sm:text-[11px] md:w-28 md:text-xs",
+                    "break-words",
                     isCompleted || isCurrent
                       ? "text-foreground"
                       : "text-muted-foreground"
@@ -57,8 +60,8 @@ export function StepIndicator({ currentStep }: StepIndicatorProps) {
 
               {/* Connector */}
               {index !== STEPS.length - 1 && (
-                <div className="flex-1 mt-5 mx-4">
-                  <div className="relative h-[3px] rounded-full bg-border overflow-hidden">
+                <div className="flex-1 mt-4 mx-2 sm:mx-3 md:mx-4 md:mt-5">
+                  <div className="relative h-[3px] overflow-hidden rounded-full bg-border">
                     <div
                       className={cn(
                         "absolute left-0 top-0 h-full bg-primary transition-all duration-300",
