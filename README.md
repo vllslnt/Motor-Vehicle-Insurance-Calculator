@@ -14,4 +14,4 @@ A web-based calculator for estimating Indonesian motor vehicle insurance premium
 https://vllslnt.github.io/Motor-Vehicle-Insurance-Calculator/
 
 ## User Manual
-[User Manual](USER_MANUAL.md)
+[User Manual](USER%20MANUAL.md)
