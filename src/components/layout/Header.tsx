@@ -9,13 +9,13 @@ export function Header() {
           <div className="bg-primary p-2 rounded-lg text-primary-foreground">
             <Shield className="h-5 w-5" />
           </div>
-          <span className="font-bold text-lg tracking-tight text-foreground">AsuransiKu</span>
+          <span className="font-bold text-lg tracking-tight text-foreground">Asuransi</span>
         </div>
         <nav className="hidden md:flex gap-6 text-sm font-medium text-muted-foreground">
-          <Link href="/" className="text-foreground transition-colors hover:text-foreground">Beranda</Link>
+          {/* <Link href="/" className="text-foreground transition-colors hover:text-foreground">Beranda</Link>
           <a href="#cara-kerja" className="transition-colors hover:text-foreground">Cara Kerja</a>
           <a href="#tentang-ojk" className="transition-colors hover:text-foreground">Tentang OJK</a>
-          <a href="#kontak" className="transition-colors hover:text-foreground">Kontak</a>
+          <a href="#kontak" className="transition-colors hover:text-foreground">Kontak</a> */}
         </nav>
       </div>
     </header>
