@@ -15,3 +15,6 @@ https://vllslnt.github.io/Motor-Vehicle-Insurance-Calculator/
 
 ## User Manual
 [User Manual](USER%20MANUAL.md)
+
+## Changelogs
+[Changelogs](CHANGELOGS.md)
